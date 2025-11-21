@@ -1,0 +1,67 @@
+/*
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+/* SPDX-License-Identifier: GPL-2.0-or-later */
+/* SPDX-License-Identifier: GPL-2.0-or-later */
+#include QMK_KEYBOARD_H
+
+const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+	[0] = LAYOUT(
+		KC_Q, KC_W, KC_E, KC_TAB, KC_R, KC_U, KC_T, KC_Y, KC_O, KC_P, KC_LBRC, KC_I, KC_RBRC, KC_BSLS, KC_DEL,
+		KC_1, KC_2, KC_3, KC_ESC, KC_4, KC_7, KC_5, KC_6, KC_9, KC_0, KC_MINS, KC_8, KC_EQL, KC_BSPC, KC_INS,
+		KC_LGUI, KC_LOPT, KC_LCTL, LT(1, KC_SPC), KC_RALT, KC_RCTL, MO(2), KC_DOWN, KC_LEFT, KC_RGHT,
+		KC_Z, KC_X, KC_LSFT, KC_C, KC_N, KC_V, KC_B, KC_COMM, KC_DOT, KC_SLSH, KC_M, KC_RSFT, KC_UP,
+		KC_A, KC_S, KC_D, KC_CAPS, KC_F, KC_J, KC_G, KC_H, KC_L, KC_SCLN, KC_QUOT, KC_K, KC_ENT
+	),
+	[1] = LAYOUT(
+		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_SLCK, KC_PAUS, KC_VOLD, KC_PSCR, KC_VOLU, KC_TRNS, KC_TRNS,
+		KC_F1, KC_F2, KC_F3, KC_GRV, KC_F4, KC_F7, KC_F5, KC_F6, KC_F9, KC_F10, KC_F11, KC_F8, KC_F12, KC_TRNS, KC_TRNS,
+		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_PGDN, KC_HOME, KC_END,
+		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_PGUP,
+		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
+	),
+	[2] = LAYOUT(
+		DF(3), KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_SLCK, KC_PAUS, KC_VOLD, KC_PSCR, KC_VOLU, KC_TRNS, KC_TRNS,
+		KC_F1, KC_F2, KC_F3, KC_GRV, KC_F4, KC_F7, KC_F5, KC_F6, KC_F9, KC_F10, KC_F11, KC_F8, KC_F12, KC_TRNS, KC_TRNS,
+		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_PGDN, KC_HOME, KC_END,
+		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_PGUP,
+		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
+	),
+	[3] = LAYOUT(
+		KC_Q, KC_W, KC_E, KC_TAB, KC_R, KC_U, KC_T, KC_Y, KC_O, KC_P, KC_LBRC, KC_I, KC_RBRC, KC_BSLS, KC_DEL,
+		KC_1, KC_2, KC_3, KC_ESC, KC_4, KC_7, KC_5, KC_6, KC_9, KC_0, KC_MINS, KC_8, KC_EQL, KC_BSPC, KC_INS,
+		KC_LGUI, KC_LOPT, KC_LCTL, KC_SPC, KC_RALT, KC_RCTL, MO(4), KC_DOWN, KC_LEFT, KC_RGHT,
+		KC_Z, KC_X, KC_LSFT, KC_C, KC_N, KC_V, KC_B, KC_COMM, KC_DOT, KC_SLSH, KC_M, KC_RSFT, KC_UP,
+		KC_A, KC_S, KC_D, KC_CAPS, KC_F, KC_J, KC_G, KC_H, KC_L, KC_SCLN, KC_QUOT, KC_K, KC_ENT
+	),
+	[4] = LAYOUT(
+		DF(0), KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_SLCK, KC_PAUS, KC_VOLD, KC_PSCR, KC_VOLU, KC_TRNS, KC_TRNS,
+		KC_F1, KC_F2, KC_F3, KC_GRV, KC_F4, KC_F7, KC_F5, KC_F6, KC_F9, KC_F10, KC_F11, KC_F8, KC_F12, KC_TRNS, KC_TRNS,
+		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_PGDN, KC_HOME, KC_END,
+		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_PGUP,
+		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
+	)
+};
+
+layer_state_t default_layer_state_set_user(layer_state_t state) {
+    // Light LED when default layer is not 0, turn off otherwise
+    if (get_highest_layer(state) == 0) {
+        gpio_set_pin_output(B5);
+        gpio_write_pin_high(B5);
+    } else {
+        gpio_set_pin_output(B5);
+        gpio_write_pin_low(B5);
+    }
+    return state;
+}
