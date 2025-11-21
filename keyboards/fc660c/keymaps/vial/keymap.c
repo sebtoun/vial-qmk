@@ -44,3 +44,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,_______,_______,                _______,                _______,_______,_______,     _______,_______,_______
     )
 };
+
+layer_state_t default_layer_state_set_user(layer_state_t state) {
+    // Light LED when default layer is not 0, turn off otherwise
+    if (get_highest_layer(state) == 0) {
+        gpio_set_pin_output(B5);
+        gpio_write_pin_high(B5);
+    } else {
+        gpio_set_pin_output(B5);
+        gpio_write_pin_low(B5);
+    }
+    return state;
+}
