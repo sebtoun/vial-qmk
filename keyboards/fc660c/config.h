@@ -44,3 +44,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // test all keys before further adjustment.
 // this should probably stay in the range +/-5.
 // #define ACTUATION_DEPTH_ADJUSTMENT 0
+
+#define DYNAMIC_KEYMAP_LAYER_COUNT 5
